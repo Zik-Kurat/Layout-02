@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+:root {
+    --px: calc(1rem / 16);
+
+    --base: #000000;
+    --level-1: #181823;
+    --light-grey: #deecf9;
+    --dark-grey: #c7e0f4;
+    --text: #ffffff;
+    --primary: #5221e6;
+    --green-accent: #3cc74e;
+    --pink-accent: #e95d90;
+    --peach-accent: #fff3e4;
+    --violet-accent: #fbe4ff;
+
+    --font-family: "Sen", serif;
+
+    --label-1: calc(117 * var(--px)) var(--font-family);
+    --heading-1: 700 calc(78 * var(--px)) var(--font-family);
+    --heading-2: 700 calc(55 * var(--px)) var(--font-family);
+    --heading-3: 700 calc(24 * var(--px)) var(--font-family);
+    --heading-4: 700 calc(18 * var(--px)) var(--font-family);
+    --heading-5: 700 calc(16 * var(--px)) var(--font-family);
+    --body-1: calc(18 * var(--px)) var(--font-family);
+    --body-2: calc(16 * var(--px)) var(--font-family);
+    --overline: calc(16 * var(--px)) var(--font-family);
+    --button: calc(18 * var(--px)) var(--font-family);
+
+    font: var(--body-1);
+    color: var(--text);
+    background: var(--base);
+}
+@media (max-width: 1440px) {
+    :root {
+        --heading-1: 700 calc(56 * var(--px)) var(--font-family);
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --heading-1: 700 calc(32 * var(--px)) var(--font-family);
+        --heading-2: 700 calc(32 * var(--px)) var(--font-family);
+    }
+}
+
+/* -------------------------------------------------------------- */
+/* TEXT */
+
+body {
+    font: var(--heading-1);
+}
+
+/* -------------------------------------------------------------- */
