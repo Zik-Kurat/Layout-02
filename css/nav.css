@@ -1,4 +1,4 @@
-.nav {
+.nav--container {
     font: var(--body-2);
 
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 @media (max-width: 768px) {
-    .nav {
+    .nav--container {
         padding: 0;
         padding-left: var(--padding-h);
     }
