@@ -1,5 +1,5 @@
 :root {
-    --ltk--min-width: 320px;
+    --ltk--min-width: 300px;
     --ltk--max-width: 1920px;
     --ltk--min-height: 600px;
 
@@ -49,6 +49,16 @@
     right: 0;
     top: 0;
     z-index: 100;
+
+    overflow: auto;
+}
+
+.ltk--modal-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    overflow: auto;
 }
 
 /* --------------------------------------------------------------------- */

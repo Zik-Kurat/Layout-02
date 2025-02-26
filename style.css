@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 
 :root {
-    --px: calc(1rem / 16);
-
     --base: #000000;
     --level-1: #181823;
     --light-grey: #deecf9;
@@ -27,9 +25,7 @@
     --overline: calc(16 * var(--px)) var(--font-family);
     --button: calc(18 * var(--px)) var(--font-family);
 
-    font: var(--body-1);
-    color: var(--text);
-    background: var(--base);
+    --px: calc(1rem / 16);
 }
 @media (max-width: 1440px) {
     :root {
@@ -43,11 +39,33 @@
     }
 }
 
-/* -------------------------------------------------------------- */
-/* TEXT */
-
 body {
-    font: var(--heading-1);
+    font: var(--body-1);
+    color: var(--text);
+    background: var(--base);
 }
 
-/* -------------------------------------------------------------- */
+body[data-ttk01-group="popup"][data-ttk01-flag=true] {
+    overflow: hidden;
+}
+
+/* --------------------------------------------------------------------- */
+/* TEXT */
+
+.padding-container {
+    --padding-h: 75px;
+    
+    padding: 0 var(--padding-h);
+}
+@media (max-width: 1440px) {
+    .padding-container {
+        --padding-h: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .padding-container {
+        --padding-h: 20px;
+    }
+}
+
+/* --------------------------------------------------------------------- */

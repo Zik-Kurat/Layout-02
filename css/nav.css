@@ -1,0 +1,148 @@
+.nav {
+    font: var(--body-2);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .nav {
+        padding: 0;
+        padding-left: var(--padding-h);
+    }
+}
+
+.nav--links {
+    display: flex;
+}
+.nav--link {
+    display: block;
+    padding: 32px 24px;
+
+    transition: background-color 0.5s;
+}
+@media (hover: hover) {
+    .nav--link:hover {
+        background: var(--primary);
+    }
+}
+@media (hover: none) {
+    .nav--link:last-child {
+        background: var(--primary);
+    }
+}
+@media (max-width: 768px) {
+    .nav--links {
+        display: none;
+    }
+}
+
+.nav--logo > img {
+    display: block;
+    height: calc(24 * var(--px));
+
+    transition: height 0.5s;
+}
+@media (hover: hover) {
+    .nav--logo > img:hover {
+        height: calc(34 * var(--px));
+    }
+}
+
+.nav--burger {
+    display: none;
+    padding: 24px 20px;
+
+    align-self: flex-end;
+
+    transition:
+        background-color 0.5s,
+        padding 0.5s;
+}
+.nav--burger > img {
+    display: block;
+    height: calc(24 * var(--px));
+}
+@media (hover: hover) {
+    .nav--burger:hover {
+        background: var(--primary);
+    }
+}
+@media (max-width: 768px) {
+    .nav--burger {
+        display: block;
+    }
+}
+
+.nav--modal {
+    background-color: #fff3e440;
+    background: repeating-linear-gradient(
+        45deg,
+        #18182380,
+        #18182380 15px,
+        #e95d9080 15px,
+        #e95d9080 30px
+    );
+}
+.nav--modal--container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: flex-end;
+}
+.nav--modal--links {
+    display: flex;
+
+    flex-direction: column;
+
+    background: var(--base);
+
+    overflow: auto;
+}
+.nav--modal[data-ttk01-flag=true] {
+    animation: forwards 0.25s nav-modal-on;
+}
+.nav--modal[data-ttk01-flag=false] {
+    animation: forwards 0.25s nav-modal-off;
+}
+.nav--modal[data-ttk01-flag=true] .nav--modal--links {
+    animation: forwards 0.25s nav-links-on;
+}
+.nav--modal[data-ttk01-flag=false] .nav--modal--links {
+    animation: forwards 0.25s nav-links-off;
+}
+@keyframes nav-modal-on {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes nav-modal-off {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes nav-links-on {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes nav-links-off {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
