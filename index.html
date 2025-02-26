@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
-<body data-ttk01-group="popup">
+<body data-ttk01-method-scroll-stop-observer>
 
     <!-- DATA - TOGGLE GROUPS START -->
-    <style class="ttk01" data-ttk01-group="popup" data-ttk01-max-width="768"></style>
+    <style class="ttk01" data-ttk01-id="scroll-stop" data-ttk01-max-width="768"></style>
+    <style class="ttk01" data-ttk01-id="nav-popup" data-ttk01-max-width="768"></style>
     <!-- DATA - TOGGLE GROUPS END -->
     
     <!-- NAV START -->
@@ -32,12 +33,20 @@
                 <a href="#" class="nav--link">Contact</a>
             </div>
 
-            <button class="nav--burger ttk01--button" data-ttk01-group="popup">
+            <button class="nav--burger"
+                data-ttk01-method-nav-popup-button
+                data-ttk01-method-scroll-stop-button
+            >
                 <img src="img/Burger.svg" alt="">
             </button>
 
-            <div class="nav--modal ltk--modal-popup" data-ttk01-group="popup">
-                <div class="nav--modal--container ltk--width-container ttk01--area-button" data-ttk01-group="popup">
+            <div class="nav--modal ltk--modal-popup"
+                data-ttk01-method-nav-popup-observer
+            >
+                <div class="nav--modal--container ltk--width-container"
+                    data-ttk01-method-nav-popup-area-button
+                    data-ttk01-method-scroll-stop-area-button
+                >
                     <div class="nav--modal--links">
                         <a href="#" class="nav--link">Experience</a>
                         <a href="#" class="nav--link">Work</a>

@@ -45,7 +45,7 @@ body {
     background: var(--base);
 }
 
-body[data-ttk01-group="popup"][data-ttk01-flag=true] {
+body[data-ttk01-scroll-stop-flag=true] {
     overflow: hidden;
 }
 
