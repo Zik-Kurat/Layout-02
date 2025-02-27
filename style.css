@@ -8,6 +8,7 @@
     --text: #ffffff;
     --primary: #5221e6;
     --green-accent: #3cc74e;
+    --blue-accent: #609bff;
     --pink-accent: #e95d90;
     --peach-accent: #fff3e4;
     --violet-accent: #fbe4ff;
@@ -50,13 +51,6 @@ body[data-ttk01-scroll-stop-flag=true] {
 }
 
 /* --------------------------------------------------------------------- */
-/* TEXT */
-
-span.transparent {
-    color: #ffffff80;
-}
-
-/* --------------------------------------------------------------------- */
 
 .padding-container {
     --padding-h: 75px;
@@ -72,6 +66,99 @@ span.transparent {
     .padding-container {
         --padding-h: 20px;
     }
+}
+
+/* --------------------------------------------------------------------- */
+/* TEXT */
+
+h1 {
+    font: var(--heading-1);
+}
+h2 {
+    font: var(--heading-2);
+}
+p {
+    font: var(--body-1);
+    line-height: 1.5;
+}
+
+.color--transparent {
+    color: #ffffff80;
+}
+.color--green {
+    color: var(--green-accent);
+}
+.color--blue {
+    color: var(--blue-accent);
+}
+.color--pink {
+    color: var(--pink-accent);
+}
+
+/* --------------------------------------------------------------------- */
+
+/* <div class="title">
+
+    <p class="title--overline">
+        TEXT
+    </p>
+
+    <h2>
+        TEXT
+    </h2>
+
+    <p>
+        TEXT
+    </p>
+
+    <a href="#">
+        TEXT
+    </a>
+
+</div> */
+
+.title .title--overline {
+    font: var(--overline);
+
+    margin-bottom: 8px;
+}
+.title .title--container {
+    --gap: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+    gap: var(--gap);
+}
+.title p {
+    margin-bottom: 40px;
+}
+.title a {
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid var(--light-grey);
+}
+@media (max-width: 640px) {
+    .title .title--container {
+        --gap: 16px;
+    }
+}
+
+.title .title--overline {
+    color: var(--light-grey);
+}
+.title p {
+    color:#8491a0;
+}
+
+.title__black {
+    color: var(--level-1);
+}
+.title__black .title--overline {
+    color: #5b6876;
+}
+.title__black p {
+    color: #5b6876;
 }
 
 /* --------------------------------------------------------------------- */

@@ -99,19 +99,11 @@ CSS для раздельной верстки заднего фона и кон
 --ltk--gap
 
 --ltk--cols
-
---ltk--read-only--col-size
---ltk--read-only--width
 */
 
 .ltk--cols {
     --ltk--col-total: 1;
     --ltk--gap: 0px;
-
-    --ltk--read-only--col-size: calc(
-        (100% - (var(--ltk--col-total) - 1) * var(--ltk--gap))
-        / var(--ltk--col-total)
-    );
 
     display: flex;
 
@@ -122,12 +114,17 @@ CSS для раздельной верстки заднего фона и кон
 .ltk--cols > * {
     --ltk--cols: 1;
 
-    --ltk--read-only--width: calc(
-        var(--ltk--read-only--col-size) * var(--ltk--cols)
+    --ltk--private--col-size: calc(
+        (100% - (var(--ltk--col-total) - 1) * var(--ltk--gap))
+        / var(--ltk--col-total)
+    );
+
+    --ltk--private--width: calc(
+        var(--ltk--private--col-size) * var(--ltk--cols)
         + (var(--ltk--cols) - 1) * var(--ltk--gap)
     );
 
-    width: var(--ltk--read-only--width);
+    width: var(--ltk--private--width);
 
     flex-shrink: 0;
 }
