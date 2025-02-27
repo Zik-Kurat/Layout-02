@@ -40,6 +40,13 @@
 
     overflow: hidden;
 }
+.ltk--max-width-container {
+    width: 100%;
+    min-width: var(--ltk--min-width);
+    margin: 0 auto;
+
+    overflow: hidden;
+}
 
 /* --------------------------------------------------------------------- */
 
