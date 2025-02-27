@@ -81,6 +81,10 @@ p {
     font: var(--body-1);
     line-height: 1.5;
 }
+.label {
+    font: var(--label-1);
+    color: #8491a0;
+}
 
 .color--transparent {
     color: #ffffff80;
