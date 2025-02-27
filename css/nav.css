@@ -5,6 +5,7 @@
 
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 @media (max-width: 640px) {
     .nav--container {
@@ -15,6 +16,9 @@
 
 .nav--links {
     display: flex;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .nav--link {
     display: block;

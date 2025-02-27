@@ -3,8 +3,8 @@
 :root {
     --base: #000000;
     --level-1: #181823;
-    --light-grey: #deecf9;
-    --dark-grey: #c7e0f4;
+    --light-grey: #8491a0;
+    --dark-grey: #5B6876;
     --text: #ffffff;
     --primary: #5221e6;
     --green-accent: #3cc74e;
@@ -40,9 +40,13 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font: var(--body-1);
     color: var(--text);
+
     background: var(--base);
 }
 
@@ -83,7 +87,7 @@ p {
 }
 .label {
     font: var(--label-1);
-    color: #8491a0;
+    color: var(--light-grey);
 }
 
 .color--transparent {
@@ -103,17 +107,18 @@ p {
 
 /* <div class="title">
 
-    <p class="title--overline">
+    <div class="title--overline">
         TEXT
-    </p>
+    </div>
 
-    <h2>
-        TEXT
-    </h2>
-
-    <p>
-        TEXT
-    </p>
+    <div class="title--container">
+        <h2>
+            TEXT
+        </h2>
+        <p>
+            TEXT
+        </p>
+    </div>
 
     <a href="#">
         TEXT
@@ -134,10 +139,9 @@ p {
     flex-direction: column;
     gap: var(--gap);
 }
-.title p {
-    margin-bottom: 40px;
-}
 .title a {
+    display: inline-block;
+    margin-top: 40px;
     padding-bottom: 4px;
 
     border-bottom: 1px solid var(--light-grey);
@@ -152,17 +156,17 @@ p {
     color: var(--light-grey);
 }
 .title p {
-    color:#8491a0;
+    color: var(--light-grey);
 }
 
 .title__black {
     color: var(--level-1);
 }
 .title__black .title--overline {
-    color: #5b6876;
+    color: var(--dark-grey);
 }
 .title__black p {
-    color: #5b6876;
+    color: var(--dark-grey);
 }
 
 /* --------------------------------------------------------------------- */

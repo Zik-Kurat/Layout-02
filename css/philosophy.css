@@ -1,0 +1,67 @@
+.philosophy {
+    --ltk--col-total: 2;
+
+    background-color: var(--peach-accent);
+
+    position: relative;
+}
+@media (max-width: 640px) {
+    .philosophy {
+        --ltk--col-total: 1;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+.philosophy--container {
+    --padding-v: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+}
+.philosophy--container > * {
+    --padding-v: 120px;
+
+    max-width: 960px;
+    padding-top: var(--padding-v);
+    padding-bottom: var(--padding-v);
+}
+.philosophy--container .title {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+
+    overflow: auto;
+}
+.philosophy--container .title > a {
+    margin-top: 90.75px;
+}
+@media (max-width: 1280px) {
+    .philosophy--container > * {
+        --padding-v: 80px;
+    }
+}
+@media (max-width: 640px) {
+    .philosophy--container > * {
+        --padding-v: 48px;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+.philosophy--img {
+    --height: 600px;
+
+    min-height: var(--height);
+
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 640px) {
+    .philosophy--img {
+        --height: 450px;
+    }
+}
