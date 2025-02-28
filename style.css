@@ -46,6 +46,7 @@ html {
 body {
     font: var(--body-1);
     color: var(--text);
+    hyphens: auto;
 
     background: var(--base);
 }
