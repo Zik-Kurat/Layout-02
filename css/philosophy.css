@@ -5,7 +5,7 @@
 
     position: relative;
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .philosophy {
         --ltk--col-total: 1;
     }
@@ -37,12 +37,12 @@
 .philosophy--container .title > a {
     margin-top: 90.75px;
 }
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     .philosophy--container > * {
         --padding-v: 80px;
     }
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .philosophy--container > * {
         --padding-v: 48px;
     }
@@ -58,7 +58,7 @@
     background-position: center;
     background-size: cover;
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .philosophy--img {
         --height: 450px;
     }

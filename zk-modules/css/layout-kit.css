@@ -1,105 +1,78 @@
 :root {
     --ltk--min-width: 300px;
     --ltk--max-width: 1920px;
+
     --ltk--min-height: 600px;
-
-    --ltk--height: 100;
 }
-
-/*
-.ltk--height-container должен быть использован в паре с
-.ltk--width-container, согласно следующей схеме:
-
-...
-<div class="ltk--height-container">
-    <div class="ltk--width-container">
-        ...
-    </div>
-</div>
-...
-*/
 
 /* --------------------------------------------------------------------- */
 
-.ltk--height-container {
-    display: flex;
-    min-width: var(--ltk--min-width);
-    min-height: max(
-        calc(1vh * var(--ltk--height)),
-        calc(var(--ltk--height) / 100 * var(--ltk--min-height))
-    );
-
-    justify-content: center;
-}
-
-.ltk--width-container {
+.ltk--container {
     width: 100%;
     min-width: var(--ltk--min-width);
+
+    overflow: hidden;
+}
+.ltk--container .ltk--container {
+    overflow: visible;
+}
+.ltk--container__content-width {
     max-width: var(--ltk--max-width);
     margin: 0 auto;
 
-    overflow: hidden;
+    overflow: visible;
 }
-.ltk--max-width-container {
-    width: 100%;
-    min-width: var(--ltk--min-width);
-    margin: 0 auto;
+.ltk--container__viewport-height{
+    --ltk--viewport-height: 100;
 
-    overflow: hidden;
+    min-height: max(
+        calc(1vh * var(--ltk--viewport-height)),
+        calc(var(--ltk--min-height) * var(--ltk--viewport-height) / 100)
+    );
 }
 
 /* --------------------------------------------------------------------- */
 
-.ltk--modal-nav {
+.ltk--overlay {
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 100;
+    z-index: 10;
 
     overflow: auto;
 }
+.ltk--overlay__top {
+    inset: 0 0 auto 0;
+}
+.ltk--overlay__right {
+    inset: 0 0 0 auto;
+}
+.ltk--overlay__center {
+    left: 50%;
+    top: 50%;
 
-.ltk--modal-popup {
-    position: fixed;
+    transform: translate(-50%, -50%);
+}
+.ltk--overlay__fill {
     inset: 0;
-    z-index: 100;
-
-    overflow: auto;
 }
 
 /* --------------------------------------------------------------------- */
 
-/*
-CSS для раздельной верстки заднего фона и контента
-*/
+/* Сомнительно, но окэй */
 
 .ltk--block {
     position: relative;
 }
-
 .ltk--block--bg {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0;
     z-index: 0;
 }
-
 .ltk--block--content {
     position: relative;
     z-index: 1;
 }
 
 /* --------------------------------------------------------------------- */
-
-/*
---ltk--col-total
---ltk--gap
-
---ltk--cols
-*/
 
 .ltk--cols {
     --ltk--col-total: 1;
@@ -110,7 +83,6 @@ CSS для раздельной верстки заднего фона и кон
     gap: var(--ltk--gap);
     flex-wrap: wrap;
 }
-
 .ltk--cols > * {
     --ltk--cols: 1;
 

@@ -28,12 +28,12 @@
 
     --px: calc(1rem / 16);
 }
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     :root {
         --heading-1: 700 calc(56 * var(--px)) var(--font-family);
     }
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     :root {
         --heading-1: 700 calc(32 * var(--px)) var(--font-family);
         --heading-2: 700 calc(32 * var(--px)) var(--font-family);
@@ -55,6 +55,15 @@ body[data-ttk01-scroll-stop-flag=true] {
     overflow: hidden;
 }
 
+/* УДАЛИТЬ! */
+/* Это для отображения брейкпоинтов в девтулзах */
+@media (max-width: 1280px) {}
+@media (max-width: 640px) {}
+
+@media (min-width: 1440px) {}
+@media (min-width: 768px) {}
+@media (min-width: 360px) {}
+
 /* --------------------------------------------------------------------- */
 
 .padding-container {
@@ -62,12 +71,12 @@ body[data-ttk01-scroll-stop-flag=true] {
     
     padding: 0 var(--padding-h);
 }
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     .padding-container {
         --padding-h: 40px;
     }
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .padding-container {
         --padding-h: 20px;
     }
@@ -147,7 +156,7 @@ p {
 
     border-bottom: 1px solid var(--light-grey);
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .title .title--container {
         --gap: 16px;
     }

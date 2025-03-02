@@ -13,3 +13,7 @@ button {
     background: unset;
     border: none;
 }
+
+li {
+    list-style-type:  none;
+}

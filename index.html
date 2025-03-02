@@ -24,43 +24,36 @@
     <!-- --------------------------------------------------------------------- -->
     
     <!-- NAV START -->
-    <nav class="nav ltk--modal-nav">
-        <div class="nav--container ltk--width-container padding-container">
-            
+    <nav class="nav ltk--overlay ltk--overlay__top" data-ttk01-method-nav-popup-observer data-geh01-id="nav">
+        <div class="nav--container ltk--container ltk--container__content-width padding-container">
+
             <a href="#" class="nav--logo">
                 <img src="img/Logo.svg" alt="">
             </a>
-
-            <div class="nav--links">
-                <a href="#experience" class="nav--link">Ex&shy;pe&shy;ri&shy;ence</a>
-                <a href="#work" class="nav--link">Work</a>
-                <a href="#photography" class="nav--link">Pho&shy;tog&shy;ra&shy;phy</a>
-                <a href="#contact" class="nav--link">Con&shy;tact</a>
-            </div>
-
+            <ul class="nav--links">
+                <li><a href="#experience"> Ex&shy;pe&shy;ri&shy;ence </a></li>
+                <li><a href="#work">       Work                      </a></li>
+                <li><a href="#photography">Pho&shy;tog&shy;ra&shy;phy</a></li>
+                <li><a href="#contact">    Con&shy;tact              </a></li>
+            </ul>
             <button class="nav--burger"
                 data-ttk01-method-nav-popup-button
-                data-ttk01-method-scroll-stop-button
-            >
-                <img src="img/Burger.svg" alt="">
+                data-ttk01-method-scroll-stop-button>
+                <div class="nav--burger--icon" style="background-image: url(img/Burger.svg);"></div>
             </button>
 
-            <div class="nav--modal ltk--modal-popup"
-                data-ttk01-method-nav-popup-observer
-            >
-                <div class="nav--modal--container ltk--width-container"
-                    data-ttk01-method-nav-popup-area-button
-                    data-ttk01-method-scroll-stop-area-button
-                >
-                    <div class="nav--modal--links">
-                        <a href="#experience" class="nav--link">Ex&shy;pe&shy;ri&shy;ence</a>
-                        <a href="#work" class="nav--link">Work</a>
-                        <a href="#photography" class="nav--link">Pho&shy;tog&shy;ra&shy;phy</a>
-                        <a href="#contact" class="nav--link">Con&shy;tact</a>
-                    </div>
-                </div>
-            </div>
+        </div>
 
+        <div class="nav--popup-fill-bg ltk--overlay ltk--overlay__fill"
+            data-ttk01-method-nav-popup-area-button
+            data-ttk01-method-scroll-stop-area-button></div>
+        <div class="nav--popup ltk--overlay ltk--overlay__right">
+            <ul class="nav--links">
+                <li><a href="#experience"> Ex&shy;pe&shy;ri&shy;ence </a></li>
+                <li><a href="#work">       Work                      </a></li>
+                <li><a href="#photography">Pho&shy;tog&shy;ra&shy;phy</a></li>
+                <li><a href="#contact">    Con&shy;tact              </a></li>
+            </ul>
         </div>
     </nav>
     <!-- NAV END -->
@@ -70,54 +63,42 @@
 
         <!-- HEADER DESCTOP START -->
         <div class="header--desctop">
-            <div class="ltk--height-container">
-                <div class="header--container ltk--width-container">
-    
-                    <div class="ltk--block">
-                        <div class="ltk--block--bg">
-    
-                            <div class="header--img" style="background-image: url(img/man.jpg);"></div>
-    
-                        </div>
-                        <div class="header--container--text ltk--block--content">
-                            
-                            <div class="header--text">
-                                <h1>
-                                    I’m Robin Williams. A Product Designer <span class="color--transparent">based in Italy.</span>
-                                </h1>
-                                <p>
-                                    I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.
-                                </p>
-                            </div>
-    
-                        </div>
+            <div class="header--container ltk--block ltk--container ltk--container__content-width ltk--container__viewport-height">
+                <div class="ltk--block--bg ltk--container ltk--container__viewport-height">
+
+                    <div class="header--img" style="background-image: url(img/man.jpg);"></div>
+
+                </div>
+                <div class="ltk--block--content ltk--container ltk--container__viewport-height">
+
+                    <div class="header--text">
+                        <h1>
+                            I’m Robin Williams. A Product Designer <span class="color--transparent">based in Italy.</span>
+                        </h1>
+                        <p>
+                            I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.
+                        </p>
                     </div>
-        
+
                 </div>
             </div>
         </div>
         <!-- HEADER DESCTOP END -->
 
         <!-- HEADER MOBILE START -->
-        <div class="header--mobile">
-            <div class="ltk--height-container">
-                <div class="header--container ltk--width-container">
-    
-                    <div class="header--img" style="background-image: url(img/man.jpg);"></div>
-    
-                    <div class="header--container--text padding-container">
-                        <div class="header--text">
-                            <h1>
-                                I’m Robin Williams. A Product Designer <span class="color--transparent">based in Italy.</span>
-                            </h1>
-                            <p>
-                                I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
+        <div class="header--mobile ltk--container ltk--container__viewport-height">
+
+            <div class="header--img" style="background-image: url(img/man.jpg);"></div>
+
+            <div class="header--text padding-container">
+                <h1>
+                    I’m Robin Williams. A Product Designer <span class="color--transparent">based in Italy.</span>
+                </h1>
+                <p>
+                    I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.
+                </p>
             </div>
+
         </div>
         <!-- HEADER MOBILE END -->
 
@@ -125,7 +106,7 @@
     <!-- HEADER END -->
     
     <!-- WORK EXPERIENCE START -->
-    <section class="work-experience ltk--width-container padding-container" id="experience">
+    <section class="work-experience ltk--width-container padding-container" id="experience" style="display: none;">
         <div class="title">
             <div class="title--overline">
                 work experience
@@ -175,7 +156,7 @@
     <!-- WORK EXPERIENCE END -->
 
     <!-- PHILOSOPHY START -->
-    <section class="philosophy ltk--max-width-container ltk--cols">
+    <section class="philosophy ltk--max-width-container ltk--cols" style="display: none;">
         <div class="philosophy--container">
             <div class="title title__black padding-container">
                 <div class="title--container">
@@ -213,7 +194,7 @@
     <!-- МУСОР ДЛЯ ТЕСТА END -->
 
     <script src="zk-modules/js/toggle-tool-kit-01.js"></script>
-    <script src="zk-modules/js/get-nav-height.js"></script>
+    <script src="zk-modules/js/get-element-height.js"></script>
 
 </body>
 </html>

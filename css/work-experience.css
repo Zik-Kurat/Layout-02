@@ -4,12 +4,12 @@
     padding-top: var(--padding-v);
     padding-bottom: var(--padding-v);
 }
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     .work-experience {
         --padding-v: 80px;
     }
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .work-experience {
         --padding-v: 48px;
     }
@@ -26,7 +26,7 @@
     --ltk--col-total: 3;
     --ltk--gap: 24px;
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .work-experience .ltk--cols {
         --ltk--col-total: 1;
         --ltk--gap: 40px;
@@ -46,12 +46,12 @@
 
     max-width: 368px;
 }
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     .work-experience .carts h3 {
         --margin-bottom: 24px;
     }
 }
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .work-experience .carts h3 {
         --margin-bottom: 16px;
     }
