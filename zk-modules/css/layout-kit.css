@@ -57,15 +57,17 @@
 
 /* --------------------------------------------------------------------- */
 
-/* Сомнительно, но окэй */
-
 .ltk--block {
     position: relative;
 }
 .ltk--block--bg {
     position: absolute;
-    inset: 0;
+    left: 0;
+    top: 0;
     z-index: 0;
+}
+.ltk--block--bg__fill {
+    inset: 0;
 }
 .ltk--block--content {
     position: relative;

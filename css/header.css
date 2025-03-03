@@ -24,9 +24,6 @@
     padding-top: calc(var(--geh01--nav) + 80px);
     padding-bottom: 84px;
 }
-.header--desctop .header--container > .ltk--block--bg {
-    bottom: unset;
-}
 .header--desctop .header--container > .ltk--block--content {
     align-items: center;
 }
