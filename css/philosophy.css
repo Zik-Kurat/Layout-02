@@ -4,9 +4,15 @@
 .philosophy--container {
     --ltk--col-total: 2;
 }
+.philosophy--container > * {
+    min-height: 600px;
+}
 @media (width <= 640px) {
     .philosophy--container {
         --ltk--col-total: 1;
+    }
+    .philosophy--container > * {
+        min-height: 450px;
     }
 }
 
@@ -32,13 +38,6 @@
 /* --------------------------------------------------------------------- */
 
 .philosophy--img {
-    min-height: 600px;
-
     background-position: center;
     background-size: cover;
-}
-@media (width <= 640px) {
-    .philosophy--img {
-        min-height: 450;
-    }
 }
