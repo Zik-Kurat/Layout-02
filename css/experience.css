@@ -32,9 +32,6 @@
     --ltk--gap-x: 24px;
     --ltk--gap-y: 40px;
 }
-.experience--carts > *{
-    border: 1px dashed red;
-}
 .experience--carts p{
     font: var(--body-2);
     color: var(--light-grey);
