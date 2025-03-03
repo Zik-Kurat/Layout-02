@@ -36,13 +36,13 @@
     font: var(--body-2);
     color: var(--light-grey);
 
-    max-width: 368px;
+    padding-right: 77px;
     margin-top: 22px;
 }
 @media (width <= 1280px) {
     .experience--carts h3,
     .experience--carts p {
-        max-width: 197px;
+        padding-right: 16px;
     }
     .experience--carts > p{
         margin-top: 24px;
@@ -54,7 +54,7 @@
     }
     .experience--carts h3,
     .experience--carts p {
-        max-width: unset;
+        padding-right: 0;
     }
     .experience--carts > p{
         margin-top: 16px;

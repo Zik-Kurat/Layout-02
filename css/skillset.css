@@ -33,11 +33,11 @@
 /* --------------------------------------------------------------------- */
 
 .skillset .title p {
-    max-width: 370px;
+    padding-right: 48px;
 }
 @media (width <= 1280px) {
     .skillset .title p {
-        max-width: unset;
+        padding-right: 0;
     }
 }
 
@@ -55,11 +55,14 @@
     margin-bottom: 12px;
 }
 .skillset--carts p {
-    max-width: 370px;
+    padding-right: 48px;
 }
 @media (width <= 640px) {
     .skillset--carts {
         --ltk--col-total: 1;
+    }
+    .skillset--carts p {
+        padding-right: 0;
     }
 }
 
