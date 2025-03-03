@@ -91,6 +91,9 @@ h1 {
 h2 {
     font: var(--heading-2);
 }
+h3 {
+    font: var(--heading-3);
+}
 p {
     font: var(--body-1);
     line-height: 1.5;
@@ -138,6 +141,7 @@ p {
 
 .title .title--overline {
     font: var(--overline);
+    text-transform: uppercase;
 
     margin-bottom: 8px;
 }

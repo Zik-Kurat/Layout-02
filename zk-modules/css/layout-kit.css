@@ -78,24 +78,25 @@
 
 .ltk--cols {
     --ltk--col-total: 1;
-    --ltk--gap: 0px;
+    --ltk--gap-x: 0px;
+    --ltk--gap-y: 0px;
 
     display: flex;
 
-    gap: var(--ltk--gap);
+    gap: var(--ltk--gap-y) var(--ltk--gap-x);
     flex-wrap: wrap;
 }
 .ltk--cols > * {
     --ltk--cols: 1;
 
     --ltk--private--col-size: calc(
-        (100% - (var(--ltk--col-total) - 1) * var(--ltk--gap))
+        (100% - (var(--ltk--col-total) - 1) * var(--ltk--gap-x))
         / var(--ltk--col-total)
     );
 
     --ltk--private--width: calc(
         var(--ltk--private--col-size) * var(--ltk--cols)
-        + (var(--ltk--cols) - 1) * var(--ltk--gap)
+        + (var(--ltk--cols) - 1) * var(--ltk--gap-x)
     );
 
     width: var(--ltk--private--width);
