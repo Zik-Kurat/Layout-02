@@ -48,7 +48,9 @@
             data-ttk01-method-nav-popup-area-button
             data-ttk01-method-scroll-stop-area-button></div>
         <div class="nav--popup ltk--overlay ltk--overlay__right">
-            <ul class="nav--links">
+            <ul class="nav--links"
+                data-ttk01-method-nav-popup-button
+                data-ttk01-method-scroll-stop-button>
                 <li><a href="#experience"> Ex&shy;pe&shy;ri&shy;ence </a></li>
                 <li><a href="#work">       Work                      </a></li>
                 <li><a href="#photography">Pho&shy;tog&shy;ra&shy;phy</a></li>
@@ -62,8 +64,8 @@
     <header class="header">
 
         <!-- HEADER DESCTOP START -->
-        <div class="header--desctop">
-            <div class="header--container ltk--block ltk--container ltk--container__content-width ltk--container__viewport-height">
+        <div class="header--desctop ltk--container">
+            <div class="header--container ltk--block ltk--container ltk--container__content-width">
                 <div class="ltk--block--bg ltk--container ltk--container__viewport-height">
 
                     <div class="header--img" style="background-image: url(img/man.jpg);"></div>
@@ -108,11 +110,10 @@
     <!-- EXPERIENCE START -->
     <section class="experience ltk--container ltk--container__content-width padding-container" id="experience">
         <div class="title">
-            <div class="title--overline">
-                work experience
-            </div>
-        
             <div class="title--container">
+                <div class="title--overline">
+                    work experience
+                </div>
                 <h2>
                     Companies I have worked for in the past
                 </h2>
@@ -157,9 +158,10 @@
     <!-- EXPERIENCE END -->
 
     <!-- PHILOSOPHY START -->
-    <section class="philosophy ltk--max-width-container ltk--cols" style="display: none;">
-        <div class="philosophy--container">
-            <div class="title title__black padding-container">
+    <section class="philosophy ltk--container">
+        <div class="philosophy--container ltk--container ltk--container__content-width ltk--cols">
+
+            <div class="philosophy--text title title__black padding-container">
                 <div class="title--container">
                     <h2>
                         Phi&shy;los&shy;o&shy;phy & values
@@ -172,9 +174,10 @@
                     More about me
                 </a>
             </div>
-        </div>
+    
+            <div class="philosophy--img" style="background-image: url(img/photo1.jpg);"></div>
 
-        <div class="philosophy--img" style="background-image: url(img/photo1.jpg);"></div>
+        </div>
     </section>
     <!-- PHILOSOPHY END -->
 

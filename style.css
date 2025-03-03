@@ -120,11 +120,10 @@ p {
 
 /* <div class="title">
 
-    <div class="title--overline">
-        TEXT
-    </div>
-
     <div class="title--container">
+        <div class="title--overline">
+            TEXT
+        </div>
         <h2>
             TEXT
         </h2>
@@ -139,19 +138,21 @@ p {
 
 </div> */
 
+.title {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start
+}
 .title .title--overline {
     font: var(--overline);
     text-transform: uppercase;
 
     margin-bottom: 8px;
 }
-.title .title--container {
-    --gap: 24px;
-
-    display: flex;
-
-    flex-direction: column;
-    gap: var(--gap);
+.title p {
+    margin-top: 24px;
 }
 .title a {
     display: inline-block;
@@ -161,8 +162,8 @@ p {
     border-bottom: 1px solid var(--light-grey);
 }
 @media (width <= 640px) {
-    .title .title--container {
-        --gap: 16px;
+    .title > .title--container > p{
+        margin-top: 16px;
     }
 }
 

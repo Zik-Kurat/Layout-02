@@ -1,49 +1,30 @@
 .philosophy {
+    background: var(--peach-accent);
+}
+.philosophy--container {
     --ltk--col-total: 2;
-
-    background-color: var(--peach-accent);
-
-    position: relative;
 }
 @media (width <= 640px) {
-    .philosophy {
+    .philosophy--container {
         --ltk--col-total: 1;
     }
 }
 
 /* --------------------------------------------------------------------- */
 
-.philosophy--container {
+.philosophy--text {
     --padding-v: 120px;
 
-    display: flex;
-
-    justify-content: flex-end;
-}
-.philosophy--container > * {
-    --padding-v: 120px;
-
-    max-width: 960px;
     padding-top: var(--padding-v);
     padding-bottom: var(--padding-v);
 }
-.philosophy--container .title {
-    display: flex;
-    
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-}
-.philosophy--container .title > a {
-    margin-top: 90.75px;
-}
 @media (width <= 1280px) {
-    .philosophy--container > * {
+    .philosophy--text {
         --padding-v: 80px;
     }
 }
 @media (width <= 640px) {
-    .philosophy--container > * {
+    .philosophy--text {
         --padding-v: 48px;
     }
 }
@@ -51,15 +32,13 @@
 /* --------------------------------------------------------------------- */
 
 .philosophy--img {
-    --height: 600px;
-
-    min-height: var(--height);
+    min-height: 600px;
 
     background-position: center;
     background-size: cover;
 }
 @media (width <= 640px) {
     .philosophy--img {
-        --height: 450px;
+        min-height: 450;
     }
 }

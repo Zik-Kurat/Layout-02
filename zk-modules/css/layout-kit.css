@@ -3,6 +3,7 @@
     --ltk--max-width: 1920px;
 
     --ltk--min-height: 600px;
+    --ltk--max-height: 1280px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -26,7 +27,10 @@
     --ltk--viewport-height: 100;
 
     min-height: max(
-        calc(1vh * var(--ltk--viewport-height)),
+        min(
+            calc(1vh * var(--ltk--viewport-height)),
+            calc(var(--ltk--max-height) * var(--ltk--viewport-height) / 100)
+        ),
         calc(var(--ltk--min-height) * var(--ltk--viewport-height) / 100)
     );
 }
