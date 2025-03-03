@@ -66,8 +66,8 @@
 }
 .ltk--block--bg {
     position: absolute;
-    left: 0;
-    top: 0;
+    inset: 0;
+    bottom: unset;
     z-index: 0;
 }
 .ltk--block--bg__fill {
