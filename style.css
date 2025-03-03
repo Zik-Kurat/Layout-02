@@ -120,7 +120,7 @@ p {
 
 /* <div class="title">
 
-    <div class="title--container">
+    <div>
         <div class="title--overline">
             TEXT
         </div>
@@ -162,7 +162,7 @@ p {
     border-bottom: 1px solid var(--light-grey);
 }
 @media (width <= 640px) {
-    .title > .title--container > p{
+    .title p{
         margin-top: 16px;
     }
 }

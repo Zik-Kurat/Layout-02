@@ -18,19 +18,19 @@
 
 /* --------------------------------------------------------------------- */
 
-.philosophy--text {
+.philosophy .title {
     --padding-v: 120px;
 
     padding-top: var(--padding-v);
     padding-bottom: var(--padding-v);
 }
 @media (width <= 1280px) {
-    .philosophy--text {
+    .philosophy .title {
         --padding-v: 80px;
     }
 }
 @media (width <= 640px) {
-    .philosophy--text {
+    .philosophy .title {
         --padding-v: 48px;
     }
 }

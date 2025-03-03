@@ -1,4 +1,4 @@
-.experience {
+.experience--container {
     --padding-v: 120px;
 
     display: flex;
@@ -9,19 +9,19 @@
     gap: 40px;
 }
 @media (width <= 1280px) {
-    .experience {
+    .experience--container {
         --padding-v: 80px;
     }
 }
 @media (width <= 640px) {
-    .experience {
+    .experience--container {
         --padding-v: 48px;
     }
 }
 
 /* --------------------------------------------------------------------- */
 
-.experience .title {
+.experience .title h2 {
     max-width: 690px;
 }
 
@@ -40,6 +40,10 @@
     margin-top: 22px;
 }
 @media (width <= 1280px) {
+    .experience--carts h3,
+    .experience--carts p {
+        max-width: 197px;
+    }
     .experience--carts > p{
         margin-top: 24px;
     }
@@ -47,6 +51,10 @@
 @media (width <= 640px) {
     .experience--carts {
         --ltk--col-total: 1;
+    }
+    .experience--carts h3,
+    .experience--carts p {
+        max-width: unset;
     }
     .experience--carts > p{
         margin-top: 16px;

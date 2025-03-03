@@ -31,7 +31,7 @@
 .header--desctop .header--img {
     width: 52%;
 }
-.header--desctop .header--text {
+.header--desctop .header--title {
     display: flex;
     width: 54%;
     margin-left: auto;
@@ -44,14 +44,14 @@
     .header--desctop .header--img {
         width: 50%;
     }
-    .header--desctop .header--text {
+    .header--desctop .header--title {
         width: 59%;
     }
 }
 
 /* --------------------------------------------------------------------- */
 
-.header--mobile {
+.header--mobile .header--container {
     display: flex;
     padding-top: var(--geh01--nav);
 
@@ -61,7 +61,7 @@
 .header--mobile .header--img {
     height: 288px;
 }
-.header--mobile .header--text {
+.header--mobile .header--title {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
