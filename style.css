@@ -64,21 +64,41 @@ body[data-ttk01-scroll-stop-flag=true] {
 @media (min-width: 768px) {}
 @media (min-width: 360px) {}
 
-/* --------------------------------------------------------------------- */
+/* * {
+    box-shadow: inset 0px 0px 5px 0px #ffffff;
+} */
 
-.padding-container {
-    --padding-h: 75px;
-    
-    padding: 0 var(--padding-h);
+/* --------------------------------------------------------------------- */
+/* Сокрытие элемента на определенных размерах экрана */
+
+@media (width <= 640px) {
+    .hidden--sm-or-less {
+        display: none;
+    }
+}
+@media (width > 640px) {
+    .hidden--sm-or-more {
+        display: none;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* Боковые отступы в виде кастомного свойства */
+
+:root {
+    --padding-h: 72px;
+    --padding-h-large: 182px;
 }
 @media (width <= 1280px) {
-    .padding-container {
+    :root {
         --padding-h: 40px;
+        --padding-h-large: 40px;
     }
 }
 @media (width <= 640px) {
-    .padding-container {
+    :root {
         --padding-h: 20px;
+        --padding-h-large: 20px;
     }
 }
 
@@ -101,6 +121,32 @@ p {
 .label {
     font: var(--label-1);
     color: var(--light-grey);
+}
+
+.icon {
+    display: block;
+    height: calc(18 * var(--px));
+
+    aspect-ratio: 1/1;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: block;
+    height: calc(24 * var(--px));
+
+    transition: transform 0.25s;
+}
+.logo > * {
+    height: 100%;
+}
+@media (hover: hover) {
+    .logo:hover {
+        transform: scale(1.1);
+    }
 }
 
 .color--transparent {

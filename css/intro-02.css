@@ -1,0 +1,29 @@
+.intro-02--container {
+    display: flex;
+    padding-top: var(--geh01--header);
+
+    flex-direction: column;
+}
+
+.intro-02--img {
+    min-height: 275px;
+
+    flex-grow: 1;
+}
+.intro-02--text {
+    display: flex;
+    padding: 48px var(--padding-h) 48px var(--padding-h);
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------------------- */
+
+.intro-02--img {
+    background-position: center;
+    background-size: cover;
+}
+.intro-02 p {
+    margin-top: 16px;
+}

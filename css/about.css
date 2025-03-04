@@ -1,0 +1,37 @@
+.about--container {
+    --ltk--col-total: 2;
+}
+.about--container > * {
+    min-height: 600px;
+}
+@media (width <= 640px) {
+    .about--container {
+        --ltk--col-total: 1;
+    }
+    .about--container > * {
+        min-height: 450px;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+.about--block {
+    --padding-v: 120px;
+
+    display: flex;
+    padding: var(--padding-v) var(--padding-h);
+}
+.about--img {
+    background-position: center;
+    background-size: cover;
+}
+@media (width <= 1280px) {
+    .about--block {
+        --padding-v: 80px;
+    }
+}
+@media (width <= 640px) {
+    .about--block {
+        --padding-v: 48px;
+    }
+}
