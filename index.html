@@ -13,22 +13,25 @@
     <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/intro-02.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about-02.css">
     <link rel="stylesheet" href="css/cardholder.css">
     <link rel="stylesheet" href="css/cardholder-02.css">
+    <link rel="stylesheet" href="css/brand-slider.css">
+    <link rel="stylesheet" href="css/brandholder.css">
 
     <link rel="stylesheet" href="css/footer.css">
 </head>
-<body data-ttk01-method-scroll-stop-observer>
+<body data-ttk01-flag-scroll-stop>
 
     <!-- DATA - TOGGLE GROUPS START -->
-    <style class="ttk01" data-ttk01-id="scroll-stop" data-ttk01-max-width="640"></style>
-    <style class="ttk01" data-ttk01-id="header-popup" data-ttk01-max-width="640"></style>
+    <style data-ttk01="scroll-stop" data-ttk01-max-width="640"></style>
+    <style data-ttk01="header-popup" data-ttk01-max-width="640"></style>
     <!-- DATA - TOGGLE GROUPS END -->
 
     <!-- --------------------------------------------------------------------- -->
     
     <!-- HEADER START -->
-    <header class="header ltk--overlay ltk--overlay__top" data-ttk01-method-header-popup-observer data-geh01-id="header">
+    <header class="header ltk--overlay ltk--overlay__top" data-ttk01-flag-header-popup data-geh01="header">
         <div class="header--container ltk--container ltk--container__content-width">
 
             <a href="#" class="logo">
@@ -41,20 +44,20 @@
                 <li><a href="#contact">    Con&shy;tact              </a></li>
             </ul>
             <button class="header--burger"
-                data-ttk01-method-header-popup-button
-                data-ttk01-method-scroll-stop-button>
+                data-ttk01-button-header-popup
+                data-ttk01-button-scroll-stop>
                 <div class="icon" style="background-image: url(img/Burger.svg);"></div>
             </button>
 
         </div>
 
         <div class="header--popup-fill-bg ltk--overlay ltk--overlay__fill"
-            data-ttk01-method-header-popup-area-button
-            data-ttk01-method-scroll-stop-area-button></div>
+            data-ttk01-area-button-header-popup
+            data-ttk01-area-button-scroll-stop></div>
         <div class="header--popup ltk--overlay ltk--overlay__right">
             <ul class="header--links"
-                data-ttk01-method-header-popup-button
-                data-ttk01-method-scroll-stop-button>
+                data-ttk01-button-header-popup
+                data-ttk01-button-scroll-stop>
                 <li><a href="#experience"> Ex&shy;pe&shy;ri&shy;ence </a></li>
                 <li><a href="#work">       Work                      </a></li>
                 <li><a href="#photography">Pho&shy;tog&shy;ra&shy;phy</a></li>
@@ -116,7 +119,7 @@
 
             <div class="intro-02--img" style="background-image: url(img/man.jpg);"></div>
 
-            <div class="intro-02--text padding-container">
+            <div class="intro-02--text">
                 <div>
                     <h1>
                         I’m Robin Williams. A Product Designer <span class="color--transparent">based in Italy.</span>
@@ -220,7 +223,7 @@
 
     <!-- CARDSHOLDER-02 START -->
     <section class="cardholder-02 ltk--container">
-        <div class="cardholder-02--container ltk--container ltk--container__content-width padding-container ltk--cols">
+        <div class="cardholder-02--container ltk--container ltk--container__content-width ltk--cols">
 
             <div class="cardholder-02--header">
 
@@ -282,13 +285,91 @@
     </section>
     <!-- CARDSHOLDER-02 END -->
 
+    <!-- BRAND SLIDER START -->
+    <section class="brand-slider ltk--container hidden--xl-or-less" data-stk01 data-stk01-total="3" data-stk01-delay="2.5">
+        <div class="brand-slider--container ltk--container ltk--container__content-width ltk--cols">
+
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-1.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-2.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-3.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-4.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-5.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-6.svg" alt="">
+                </a>
+            </article>
+
+        </div>
+    </section>
+    <!-- BRAND SLIDER END -->
+
+    <!-- BRANDHOLDER START -->
+    <section class="brandholder ltk--container hidden--xl-or-more">
+        <div class="brandholder--container ltk--container ltk--container__content-width ltk--cols">
+
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-1.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-2.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-3.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-4.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-5.svg" alt="">
+                </a>
+            </article>
+            <article class="brand-card">
+                <a href="#" class="logo">
+                    <img src="img/brand-6.svg" alt="">
+                </a>
+            </article>
+
+        </div>
+    </section>
+    <!-- BRANDHOLDER END -->
+
     <!-- ! -->
 
     <!-- ABOUT START -->
     <section class="about ltk--container" style="background: var(--violet-accent);">
         <div class="about--container ltk--container ltk--container__content-width ltk--cols">
 
-            <div class="about--block padding-container">
+            <div class="about--block">
 
                 <article class="title title__black">
                     <div>
@@ -311,6 +392,41 @@
         </div>
     </section>
     <!-- ABOUT END -->
+
+    <!-- ABOUT-02 START -->
+    <section class="about-02 ltk--container">
+        <div class="about-02--container ltk--container ltk--container__content-width ltk--cols">
+            <div class="about-02--wrapper">
+                <div class="about02--header">
+
+                    <article class="title">
+
+                        <div>
+                            <h2>
+                                Dribbble
+                            </h2>
+                            <p>
+                                Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.
+                            </p>
+                        </div>
+                    
+                        <a href="#">
+                            Follow me on Dribbble
+                        </a>
+                    
+                    </article>
+
+                </div>
+                <div class="about02--window">
+                    <div class="about02--window--header">
+                        <div></div><div></div><div></div>
+                    </div>
+                    <div class="about02--window--viewport" style="background-image: url(img/Rectangle\ 42.png);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT-02 END -->
 
     <!-- ! -->
 
@@ -385,6 +501,7 @@
 
     <script src="zk-modules/js/toggle-tool-kit-01.js"></script>
     <script src="zk-modules/js/get-element-height.js"></script>
+    <script src="zk-modules/js/slider-tool-kit-01.js"></script>
 
 </body>
 </html>

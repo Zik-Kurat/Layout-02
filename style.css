@@ -51,7 +51,7 @@ body {
     background: var(--base);
 }
 
-body[data-ttk01-scroll-stop-flag=true] {
+body[data-ttk01-flag-scroll-stop=true] {
     overflow: hidden;
 }
 
@@ -64,7 +64,7 @@ body[data-ttk01-scroll-stop-flag=true] {
 @media (min-width: 768px) {}
 @media (min-width: 360px) {}
 
-/* * {
+/* body * {
     box-shadow: inset 0px 0px 5px 0px #ffffff;
 } */
 
@@ -82,23 +82,31 @@ body[data-ttk01-scroll-stop-flag=true] {
     }
 }
 
+@media (width <= 1280px) {
+    .hidden--xl-or-less {
+        display: none;
+    }
+}
+@media (width > 1280px) {
+    .hidden--xl-or-more {
+        display: none;
+    }
+}
+
 /* --------------------------------------------------------------------- */
 /* Боковые отступы в виде кастомного свойства */
 
 :root {
     --padding-h: 72px;
-    --padding-h-large: 182px;
 }
 @media (width <= 1280px) {
     :root {
         --padding-h: 40px;
-        --padding-h-large: 40px;
     }
 }
 @media (width <= 640px) {
     :root {
         --padding-h: 20px;
-        --padding-h-large: 20px;
     }
 }
 
@@ -164,7 +172,7 @@ p {
 
 /* --------------------------------------------------------------------- */
 
-/* <div class="title">
+/* <article class="title">
 
     <div>
         <div class="title--overline">
@@ -182,7 +190,7 @@ p {
         TEXT
     </a>
 
-</div> */
+</article> */
 
 .title {
     display: flex;

@@ -1,22 +1,13 @@
 // Необходимые для работы сущности:
 
-// Указанные ниже CSS-классы назначаются программистом.
-// data-geh01-id
-
-// Указанные ниже CSS-свойства назначается скриптом.
-// --geh01--<id>
+// data-geh01        : id/str          - элемент, чей размер отслеживается.
+// --geh01--<id/str> : int (read only) - размер элемента под указанным id. Пишется в body.
 
 // ---------------------------------------------------------------------
 
-const GEHs = document.querySelectorAll('*[data-geh01-id]');
+const GEHs = document.querySelectorAll('*[data-geh01]');
 GEHs.forEach(geh => {
-    const ID = geh.dataset.geh01Id;
-
-    updateData();
-    const RESIZE_OBSERVER = new ResizeObserver(() => {
-        updateData();
-    });
-    RESIZE_OBSERVER.observe(geh);
+    const ID = geh.dataset.geh01;
 
     // ---------------------------------------------------------------------
 
@@ -25,5 +16,13 @@ GEHs.forEach(geh => {
         
         document.body.style.setProperty('--geh01--' + ID, height + 'px');
     }
+
+    // ---------------------------------------------------------------------
+
+    updateData();
+    const RESIZE_OBSERVER = new ResizeObserver(() => {
+        updateData();
+    });
+    RESIZE_OBSERVER.observe(geh);
     
 });

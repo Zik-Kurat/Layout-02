@@ -93,10 +93,10 @@
 
 /* --------------------------------------------------------------------- */
 
-.header[data-ttk01-header-popup-flag=true] .header--popup-fill-bg {
+.header[data-ttk01-flag-header-popup=true] .header--popup-fill-bg {
     animation: forwards 0.25s header--popup-fill-bg__on;
 }
-.header[data-ttk01-header-popup-flag=false] .header--popup-fill-bg {
+.header[data-ttk01-flag-header-popup=false] .header--popup-fill-bg {
     animation: forwards 0.25s header--popup-fill-bg__off;
 }
 
@@ -118,10 +118,10 @@
     }
 }
 
-.header[data-ttk01-header-popup-flag=true] .header--popup {
+.header[data-ttk01-flag-header-popup=true] .header--popup {
     animation: forwards 0.25s header--popup__on;
 }
-.header[data-ttk01-header-popup-flag=false] .header--popup {
+.header[data-ttk01-flag-header-popup=false] .header--popup {
     animation: forwards 0.25s header--popup__off;
 }
 

@@ -82,6 +82,7 @@
 
 .ltk--cols {
     --ltk--col-total: 1;
+    --ltk--col-start: 0;
     --ltk--gap-x: 0px;
     --ltk--gap-y: 0px;
 
@@ -106,4 +107,11 @@
     width: var(--ltk--private--width);
 
     flex-shrink: 0;
+}
+.ltk--cols > *:first-child {
+    --ltk--private--margin-left: calc(
+        var(--ltk--col-start) * (var(--ltk--private--col-size) + var(--ltk--gap-x))
+    );
+
+    margin-left: var(--ltk--private--margin-left);
 }
