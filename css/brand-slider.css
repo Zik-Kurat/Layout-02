@@ -9,23 +9,3 @@
 .brand-slider--container > *:first-child {
     transition: margin 1s;
 }
-
-/* --------------------------------------------------------------------- */
-
-.brand-card {
-    display: flex;
-    min-height: 140px;
-    
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid var(--level-1);
-}
-.brand-card .logo {
-    height: calc(30 * var(--px));
-}
-@media (width <= 1280px) {
-    .brand-card .logo {
-        height: calc(21 * var(--px));
-    }
-}
