@@ -1,0 +1,59 @@
+.lenta--container {
+    --ltk--col-total: 2;
+    --ltk--gap-x: 24px;
+    --ltk--gap-y: 48px;
+
+    --padding-v: 120px;
+
+    padding: var(--padding-v) var(--padding-h);
+}
+.lenta--container > div {
+    display: flex;
+
+    flex-direction: column;
+    gap: 24px;
+}
+.lenta--header,
+.lenta--link {
+    flex-grow: 1;
+}
+@media (width <= 1280px) {
+    .lenta--container {
+        --ltk--col-total: 1;
+    
+        --padding-v: 80px;
+    }
+    .lenta--container > div {
+        gap: 48px;
+    }
+}
+@media (width <= 640px) {
+    .lenta--container {
+        --padding-v: 64px;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+.lenta--header {
+    padding-right: 64px;
+    padding-bottom: 56px;
+}
+.lenta--link {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.lenta--link > a {
+    text-transform: uppercase;
+
+    padding: 24px 32px;
+
+    border: 1px solid var(--primary);
+}
+@media (width <= 1280px) {
+    .lenta--header {
+        padding-right: 0;
+    }
+}

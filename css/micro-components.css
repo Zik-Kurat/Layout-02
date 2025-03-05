@@ -213,3 +213,28 @@
         padding: 32px;
     }
 }
+
+/* --------------------------------------------------------------------- */
+
+.card-04 {
+    background: var(--level-1);
+}
+.card-04--img {
+    height: 620px;
+
+    background-position: center;
+    background-size: cover;
+}
+.card-04--text {
+    padding: 40px 32px;
+}
+.card-04--text p {
+    color: var(--light-grey);
+    
+    margin-top: 13px;
+}
+@media (width <= 640px) {
+    .card-04--img {
+        height: 400px;
+    }
+}
