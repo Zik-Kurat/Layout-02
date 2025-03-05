@@ -23,8 +23,8 @@
     --heading-5: 700 calc(16 * var(--px)) var(--font-family);
     --body-1: calc(18 * var(--px)) var(--font-family);
     --body-2: calc(16 * var(--px)) var(--font-family);
-    --overline: calc(16 * var(--px)) var(--font-family);
-    --button: calc(18 * var(--px)) var(--font-family);
+    --overline: 700 calc(16 * var(--px)) var(--font-family);
+    --button: 700 calc(18 * var(--px)) var(--font-family);
 
     --px: calc(1rem / 16);
 }
