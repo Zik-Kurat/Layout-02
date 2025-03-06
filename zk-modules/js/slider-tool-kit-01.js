@@ -8,9 +8,11 @@
 // data-stk01-button-to-backward - кнопка шага назад.
 // data-stk01-button-to-forward  - кнопка шага вперед.
 
-// data-stk01-button-toggle           - кнопка переключаения на конкретный слайд.
-// data-stk01-num  : int              - номер ассоциированного слайда.
+// data-stk01-button-toggle : int     - кнопка переключаения на конкретный слайд.
 // data-stk01-flag : bool (read only) - флаг активности ассоциированного слайда.
+
+// data-stk01-observer : int              - наблюдатель, отслеживающий ассоциированный слайда.
+// data-stk01-flag     : bool (read only) - флаг активности ассоциированного слайда.
 
 // ---------------------------------------------------------------------
 
@@ -144,14 +146,26 @@ STKs.forEach(stk => {
 
         const RESET_FUNC = delay(() => {
             SLIDER_STATE.goToActiveSlide(1);
-
-            console.log('tick');
         }, DELAY * 1000);
     
         SLIDER_STATE.addEventListener('change', event => {
             RESET_FUNC();
         });
     })();
+
+    // ---------------------------------------------------------------------
+
+    const OBSERVERs = stk.querySelectorAll('*[data-stk01-observer]');
+    OBSERVERs.forEach(element => {
+
+        const NUM = +element.dataset.stk01Observer;
+        if (isNaN(NUM)) throw new Error('');
+        if (NUM < 0)   throw new Error('');
+
+        SLIDER_STATE.addEventListener('change', event => {
+            element.dataset.stk01Flag = NUM === event.data.newActiveSlide;
+        });
+    });
 
     // ---------------------------------------------------------------------
 
@@ -172,9 +186,9 @@ STKs.forEach(stk => {
     // ---------------------------------------------------------------------
 
     const BUTTONs_TOGGLE = stk.querySelectorAll('*[data-stk01-button-toggle]');
-    BUTTONs_TOGGLE.forEach((button) => {
+    BUTTONs_TOGGLE.forEach(button => {
 
-        const NUM = button.dataset.stk01Num ? +button.dataset.stk01Num : 0;
+        const NUM = +button.dataset.stk01ButtonToggle;
         if (isNaN(NUM)) throw new Error('');
         if (NUM < 0)   throw new Error('');
 
@@ -183,9 +197,7 @@ STKs.forEach(stk => {
         });
 
         SLIDER_STATE.addEventListener('change', event => {
-            const NUM_ACTIVE_SLIDE = event.data.newActiveSlide;
-
-            button.dataset.stk01Flag = NUM === NUM_ACTIVE_SLIDE;
+            button.dataset.stk01Flag = NUM === event.data.newActiveSlide;
         });
     });
 

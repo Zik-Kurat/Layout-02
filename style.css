@@ -62,9 +62,9 @@ body[data-ttk01-flag-scroll-stop=true] {
 @media (min-width: 768px) {}
 @media (min-width: 360px) {}
 
-body * {
+/* body * {
     box-shadow: inset 0px 0px 5px 0px #ffffff;
-}
+} */
 
 /* --------------------------------------------------------------------- */
 /* Сокрытие элемента на определенных размерах экрана */
@@ -141,6 +141,7 @@ button,
 input[type="submit"] {
     font: var(--button);
     color: var(--text);
+    text-transform: uppercase;
 }
 
 a,
