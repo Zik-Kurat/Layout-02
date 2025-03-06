@@ -62,9 +62,9 @@ body[data-ttk01-flag-scroll-stop=true] {
 @media (min-width: 768px) {}
 @media (min-width: 360px) {}
 
-/* body * {
+body * {
     box-shadow: inset 0px 0px 5px 0px #ffffff;
-} */
+}
 
 /* --------------------------------------------------------------------- */
 /* Сокрытие элемента на определенных размерах экрана */
@@ -110,6 +110,11 @@ body[data-ttk01-flag-scroll-stop=true] {
 
 /* --------------------------------------------------------------------- */
 /* TEXT */
+
+body {
+    font: var(--body-1);
+    color: var(--text);
+}
 
 h1 {
     font: var(--heading-1);

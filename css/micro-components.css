@@ -241,3 +241,59 @@
         height: 400px;
     }
 }
+
+/* --------------------------------------------------------------------- */
+
+/*
+<form class="contact-form" action="#" method="post">
+
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+    </div>
+
+    <div>
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email">
+    </div>
+
+    <div>
+        <label for="Message">Message</label>
+        <textarea name="Message" id="Message" rows="3" maxlength="200"></textarea>
+    </div>
+
+    <input type="submit" value="Let’s get started">
+
+</form>
+*/
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+    gap: 40px;
+}
+.contact-form label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 14.2px;
+
+    background: var(--level-1);
+}
+.contact-form textarea {
+    padding-bottom: 21px;
+    resize: none;
+}
+.contact-form input[type="submit"] {
+    text-transform: uppercase;
+
+    padding: 24px 32px;
+
+    background: var(--primary);
+}

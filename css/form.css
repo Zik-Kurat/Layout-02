@@ -1,0 +1,32 @@
+.form--container {
+    --ltk--col-total: 12;
+    --ltk--col-start: 1;
+    --ltk--gap-x: 24px;
+    --ltk--gap-y: 48px;
+
+    --padding-v: 120px;
+
+    padding: var(--padding-v) var(--padding-h)
+}
+.form--container > * {
+    --ltk--cols: 5;
+}
+@media (width <= 1280px) {
+    .form--container {
+        --ltk--col-total: 2;
+        --ltk--col-start: 0;
+
+        --padding-v: 80px;
+    }
+    .form--container > * {
+        --ltk--cols: 1;
+    }
+}
+@media (width <= 640px) {
+    .form--container {
+        --padding-v: 48px;
+    }
+    .form--container {
+        --ltk--col-total: 1;
+    }
+}
