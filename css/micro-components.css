@@ -54,14 +54,17 @@
     }
 }
 
-.title__black {
-    color: var(--level-1);
-}
 .title__black .title--overline {
     color: var(--dark-grey);
 }
+.title__black h2 {
+    color: var(--level-1);
+}
 .title__black p {
     color: var(--dark-grey);
+}
+.title__black a {
+    color: var(--level-1);
 }
 
 /* --------------------------------------------------------------------- */

@@ -44,8 +44,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font: var(--body-1);
-    color: var(--text);
     hyphens: auto;
 
     background: var(--base);
@@ -115,17 +113,37 @@ body[data-ttk01-flag-scroll-stop=true] {
 
 h1 {
     font: var(--heading-1);
+    color: var(--text);
 }
 h2 {
     font: var(--heading-2);
+    color: var(--text);
 }
 h3 {
     font: var(--heading-3);
+    color: var(--text);
 }
-p {
+
+p,
+textarea,
+input[type="text"],
+input[type="email"] {
     font: var(--body-1);
     line-height: 1.5;
+    color: var(--text);
 }
+button,
+input[type="submit"] {
+    font: var(--button);
+    color: var(--text);
+}
+
+a,
+label {
+    font: var(--body-2);
+    color: var(--text);
+}
+
 .label {
     font: var(--label-1);
     color: var(--light-grey);

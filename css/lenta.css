@@ -46,6 +46,7 @@
     align-items: center;
 }
 .lenta--link > a {
+    font: var(--button);
     text-transform: uppercase;
 
     padding: 24px 32px;
